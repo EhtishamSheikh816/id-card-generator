@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Id Card Generator</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>I'd Card Generator</h1>
+      <div id="rght">
+        <div id="inpSecMain">
+          <span class="inpSec">
+            <label for="pic" class="lbl">Picture:</label>
+            <input type="file" name="pic" id="pic" class="inp" required />
+
+            <label for="name" class="lbl">Name:</label>
+            <input
+              type="text"
+              name="name"
+              class="inp"
+              id="name"
+              placeholder="Enter a Name"
+              required
+            />
+
+            <label for="fName" class="lbl">Father Name:</label>
+            <input
+              type="text"
+              name=""
+              id="fName"
+              placeholder="Enter a Father Name"
+              class="inp"
+              required
+            />
+
+            <label for="age" class="lbl">Age:</label>
+            <input
+              type="text"
+              name="age"
+              id="age"
+              class="inp"
+              placeholder="Enter a Age"
+              required
+            />
+          </span>
+          <div style="border: 2px groove black"></div>
+          <span class="inpSec">
+            <label for="gender" class="lbl">Gender:</label>
+            <input type="text" name="gender" id="gender" class="inp" placeholder="Enter a gender" required>
+            
+            <label for="dob" class="lbl">D.O.B:</label>
+            <input type="date" name="dob" class="inp" id="dob" required />
+
+            <label for="department" class="lbl">Department</label>
+            <select name="department" id="department" class="inp" required>
+              <option value="CSE">CSE</option>
+              <option value="IT">IT</option>
+              <option value="MECH">MECH</option>
+              <option value="CIVIL">CIVIL</option>
+              <option value="EEE">EEE</option>
+              <option value="ECE">ECE</option>
+              <option value="CHEM">CHEM</option>
+              <option value="BIO">BIO</option>
+              <option value="MATH">MATH</option>
+              <option value="PHY">PHY</option>
+              <option value="ENG">ENG</option>
+              <option value="HUM">HUM</option>
+              <option value="BIO-TECH">BIO-TECH</option>
+              <option value="AGRI">AGRI</option>
+              <option value="ARCH">ARCH</option>
+              <option value="BBA">BBA</option>
+              <option value="MBA">MBA</option>
+              <option value="MCA">MCA</option>
+              <option value="MTECH">MTECH</option>
+              <option value="PHD">PHD</option>
+              <option value="MCOM">MCOM</option>
+              <option value="BSC">BSC</option>
+            </select>
+
+            <label for="address" class="lbl">Adress:</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              class="inp"
+              placeholder="Enter a Address"
+              required
+            />
+          </span>
+        </div>
+        <div id="btnSec">
+          <button class="btn" onclick="generateCard()">
+            <i class="animation"></i>Generate<i class="animation"></i>
+          </button>
+        </div>
+      </div>
+      <div id="cardSec"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
